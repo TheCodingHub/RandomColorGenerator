@@ -1,0 +1,74 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trirong", serif;
+}
+
+.header {
+    background-color: #f4f4f4;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Title {
+    align-self: center;
+    position: absolute;
+    font-size: 20px;
+}
+
+.generator_outer {
+    width: 100%;
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    overflow-y: auto; /* Add a scrollbar if content overflows */
+}
+
+.size {
+    height: 121.43px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.bottom {
+    height: 56px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+.btn {
+    align-self: center;
+    margin-left: 5%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    transition: transform 0.1s ease-in-out;
+}
+
+.btn:active {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .Title {
+        font-size: 18px;
+    }
+
+    .size {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
